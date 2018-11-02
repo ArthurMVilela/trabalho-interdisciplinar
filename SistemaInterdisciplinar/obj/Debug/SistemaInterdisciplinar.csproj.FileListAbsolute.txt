@@ -9,3 +9,7 @@ D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\SistemaInte
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.exe
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.pdb
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_cadastro.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\zu-ZA\SistemaInterdisciplinar.resources.dll
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_principal.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_principal.zu-ZA.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\zu-ZA\SistemaInterdisciplinar.resources.dll

@@ -67,15 +67,17 @@ namespace SistemaInterdisciplinar
         }
 
         // Verifica se o usuario existe e libera o acesso ou não
-        public void verificarUsuario(string nome, string senha) {
+        public Usuario verificarUsuario(string nome, string senha) {
             OleDbDataReader dr = conexao.buscar("SELECT * FROM usuarios WHERE nome = '" + nome + "'");
 
             if(dr.HasRows)
             {
                 dr.Read();
+                long id = dr.GetInt32(0);
                 string salt = dr.GetString(6);
                 string chave = dr.GetString(7);
                 string status = dr.GetString(10);
+                string role = dr.GetString(8);
                 int tentativas = dr.GetInt16(9);
 
                 string query;
@@ -86,6 +88,7 @@ namespace SistemaInterdisciplinar
                     {
                         //logar usuário
                         MessageBox.Show("Logado com sucesso");
+                        return new Usuario(id, nome, role);
                     }
                     else
                     {
@@ -115,8 +118,8 @@ namespace SistemaInterdisciplinar
             {
                 MessageBox.Show("Não existe um usuário com este nome.");
             }
-
             dr.Close();
+            return new Usuario(); //retorna o "usuário nulo" que a aplicação não reconhece e não deixa usar o programa
         }
 
         public void cadastrarUsuario (string nome, string email, string cpf, string cep, string endereco, string senha, string cargo)

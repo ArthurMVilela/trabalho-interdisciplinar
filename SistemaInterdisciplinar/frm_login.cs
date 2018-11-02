@@ -13,7 +13,8 @@ namespace SistemaInterdisciplinar
 {
     public partial class frm_login : Form
     {
-        
+        public Usuario usuario = new Usuario();
+
         public frm_login()
         {
             InitializeComponent();
@@ -27,7 +28,22 @@ namespace SistemaInterdisciplinar
         private void btn_entrar_Click(object sender, EventArgs e)
         {
             CtrlLogin ctrlLogin = new CtrlLogin();
-            ctrlLogin.verificarUsuario(txt_nome.Text, txt_senha.Text);
+            usuario = ctrlLogin.verificarUsuario(txt_nome.Text, txt_senha.Text);
+            
+            if (!usuario.invalido())
+            {
+                this.Hide();
+            } 
+            
+        }
+
+        //quando o usuário estiver fechando
+        private void frm_login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (usuario.invalido())
+            {
+                Application.Exit();
+            }
         }
     }
 }

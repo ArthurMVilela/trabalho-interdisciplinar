@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace SistemaInterdisciplinar
 {
-    public partial class Form1 : Form
+    public partial class frm_principal : Form
     {
-        public Form1()
+        Usuario usuario = new Usuario();
+
+        public frm_principal()
         {
             InitializeComponent();
         }
+
+        private void frm_principal_Load(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            frm_login login = new frm_login();
+            login.ShowDialog();
+            usuario = login.usuario;
+            login.Close();
+            this.Enabled = true;
+
+            lbl_usuario.Text = "USUÁRIO: " + usuario.getNome() + ".";
+
+        }
+        
     }
 }
