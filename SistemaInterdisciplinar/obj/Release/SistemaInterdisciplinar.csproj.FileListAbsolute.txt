@@ -1,0 +1,4 @@
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Release\SistemaInterdisciplinar.frm_login.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Release\SistemaInterdisciplinar.Properties.Resources.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Release\SistemaInterdisciplinar.csproj.GenerateResource.cache
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Release\SistemaInterdisciplinar.csproj.CoreCompileInputs.cache

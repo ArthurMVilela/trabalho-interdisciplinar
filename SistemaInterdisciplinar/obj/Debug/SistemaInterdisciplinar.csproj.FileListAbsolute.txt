@@ -1,0 +1,11 @@
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_login.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.Properties.Resources.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.csproj.GenerateResource.cache
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.csproj.CoreCompileInputs.cache
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.csprojAssemblyReference.cache
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\SistemaInterdisciplinar.exe.config
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\SistemaInterdisciplinar.exe
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\SistemaInterdisciplinar.pdb
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.exe
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.pdb
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_cadastro.resources
