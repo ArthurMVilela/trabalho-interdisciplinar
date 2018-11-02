@@ -42,5 +42,15 @@ namespace SistemaInterdisciplinar
                 Application.Exit();
             }
         }
+
+        private void relátoriosELivrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void estoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
