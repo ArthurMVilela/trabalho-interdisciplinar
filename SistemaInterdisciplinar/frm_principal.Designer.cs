@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_principal));
             this.menu_principal = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_sair = new System.Windows.Forms.ToolStripMenuItem();
             this.status_strip = new System.Windows.Forms.StatusStrip();
             this.lbl_usuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu_principal.SuspendLayout();
@@ -48,14 +48,15 @@
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem});
+            this.mscmd_sair});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             resources.ApplyResources(this.arquivoToolStripMenuItem, "arquivoToolStripMenuItem");
             // 
-            // sairToolStripMenuItem
+            // mscmd_sair
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
+            this.mscmd_sair.Name = "mscmd_sair";
+            resources.ApplyResources(this.mscmd_sair, "mscmd_sair");
+            this.mscmd_sair.Click += new System.EventHandler(this.mscmd_sair_Click);
             // 
             // status_strip
             // 
@@ -92,7 +93,7 @@
 
         private System.Windows.Forms.MenuStrip menu_principal;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_sair;
         private System.Windows.Forms.StatusStrip status_strip;
         private System.Windows.Forms.ToolStripStatusLabel lbl_usuario;
     }

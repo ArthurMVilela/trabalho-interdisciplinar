@@ -21,16 +21,26 @@ namespace SistemaInterdisciplinar
 
         private void frm_principal_Load(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            frm_login login = new frm_login();
+            this.Enabled = false; //o usuário fica impedido de usar o formulário principal
+            frm_login login = new frm_login(); 
             login.ShowDialog();
             usuario = login.usuario;
             login.Close();
             this.Enabled = true;
 
+            //atualizar a barra de status.
             lbl_usuario.Text = "USUÁRIO: " + usuario.getNome() + ".";
 
         }
-        
+
+        private void mscmd_sair_Click(object sender, EventArgs e)
+        {
+            DialogResult resp = MessageBox.Show("Você realmente deseja sair?", "ATENÇÃO", MessageBoxButtons.YesNo);
+
+            if (resp == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

@@ -30,6 +30,7 @@ namespace SistemaInterdisciplinar
             return Convert.ToBase64String(buff); // converte os bytes em uma string com algarismos base 64
         }
 
+        //gera uma chave de segurança usada para validar o login
         private string gerarChave (string input, string salt) {
             byte[] bytesInput = new UTF8Encoding().GetBytes(input + salt);
             SHA256Managed hash = new SHA256Managed();
@@ -38,7 +39,7 @@ namespace SistemaInterdisciplinar
             return Convert.ToBase64String(chave);
         }
 
-        //Procura por um usuário ja cadastrado
+        //Procura por um usuário ja cadastrado com a entrada do usuário
         private bool procurarUsuario(string nome, string email, string cpf)
         {
             OleDbDataReader dr = conexao.buscar("SELECT * FROM usuarios WHERE nome = '"+ nome +"' OR email = '"+ email + "' OR cpf = '"+ cpf +"'");
@@ -73,6 +74,8 @@ namespace SistemaInterdisciplinar
             if(dr.HasRows)
             {
                 dr.Read();
+
+                //variáveis com informações do usuário
                 long id = dr.GetInt32(0);
                 string salt = dr.GetString(6);
                 string chave = dr.GetString(7);
@@ -88,10 +91,13 @@ namespace SistemaInterdisciplinar
                     {
                         //logar usuário
                         MessageBox.Show("Logado com sucesso");
+                        //retorna um objeto usuario valido com as informações validas
                         return new Usuario(id, nome, role);
                     }
                     else
                     {
+                        //Atualizar tentativas (acesso)
+                        //Se for igual à 0, a conta é bloqueada.
                         tentativas--;
                         
                         if (tentativas == 0)
@@ -118,8 +124,9 @@ namespace SistemaInterdisciplinar
             {
                 MessageBox.Show("Não existe um usuário com este nome.");
             }
-            dr.Close();
-            return new Usuario(); //retorna o "usuário nulo" que a aplicação não reconhece e não deixa usar o programa
+
+            dr.Close(); // fechar o objeto de leitura (IMPORTANTE)
+            return new Usuario(); //retorna um usuário invalido que a aplicação não deixa usar o programa
         }
 
         public void cadastrarUsuario (string nome, string email, string cpf, string cep, string endereco, string senha, string cargo)
