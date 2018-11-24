@@ -31,15 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_principal));
             this.menu_principal = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_config = new System.Windows.Forms.ToolStripMenuItem();
             this.mscmd_sair = new System.Windows.Forms.ToolStripMenuItem();
-            this.status_strip = new System.Windows.Forms.StatusStrip();
-            this.lbl_usuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.lançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verLançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoLançamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.efetuarSaídaEntradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verLançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relátoriosELivrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +45,11 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fluxoEntradaESaídaestoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.efetuarSaídaEntradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.status_strip = new System.Windows.Forms.StatusStrip();
+            this.lbl_usuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu_principal.SuspendLayout();
             this.status_strip.SuspendLayout();
             this.SuspendLayout();
@@ -67,28 +67,22 @@
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configuraçõesToolStripMenuItem,
+            this.mscmd_config,
             this.mscmd_sair});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             resources.ApplyResources(this.arquivoToolStripMenuItem, "arquivoToolStripMenuItem");
+            // 
+            // mscmd_config
+            // 
+            resources.ApplyResources(this.mscmd_config, "mscmd_config");
+            this.mscmd_config.Name = "mscmd_config";
+            this.mscmd_config.Click += new System.EventHandler(this.mscmd_config_Click);
             // 
             // mscmd_sair
             // 
             this.mscmd_sair.Name = "mscmd_sair";
             resources.ApplyResources(this.mscmd_sair, "mscmd_sair");
             this.mscmd_sair.Click += new System.EventHandler(this.mscmd_sair_Click);
-            // 
-            // status_strip
-            // 
-            this.status_strip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lbl_usuario});
-            resources.ApplyResources(this.status_strip, "status_strip");
-            this.status_strip.Name = "status_strip";
-            // 
-            // lbl_usuario
-            // 
-            this.lbl_usuario.Name = "lbl_usuario";
-            resources.ApplyResources(this.lbl_usuario, "lbl_usuario");
             // 
             // lançamentosToolStripMenuItem
             // 
@@ -98,34 +92,15 @@
             this.lançamentosToolStripMenuItem.Name = "lançamentosToolStripMenuItem";
             resources.ApplyResources(this.lançamentosToolStripMenuItem, "lançamentosToolStripMenuItem");
             // 
-            // estoqueToolStripMenuItem
-            // 
-            this.estoqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarEstoqueToolStripMenuItem,
-            this.efetuarSaídaEntradaToolStripMenuItem});
-            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            resources.ApplyResources(this.estoqueToolStripMenuItem, "estoqueToolStripMenuItem");
-            this.estoqueToolStripMenuItem.Click += new System.EventHandler(this.estoqueToolStripMenuItem_Click);
-            // 
-            // verLançamentosToolStripMenuItem
-            // 
-            this.verLançamentosToolStripMenuItem.Name = "verLançamentosToolStripMenuItem";
-            resources.ApplyResources(this.verLançamentosToolStripMenuItem, "verLançamentosToolStripMenuItem");
-            // 
             // novoLançamentoToolStripMenuItem
             // 
             this.novoLançamentoToolStripMenuItem.Name = "novoLançamentoToolStripMenuItem";
             resources.ApplyResources(this.novoLançamentoToolStripMenuItem, "novoLançamentoToolStripMenuItem");
             // 
-            // consultarEstoqueToolStripMenuItem
+            // verLançamentosToolStripMenuItem
             // 
-            this.consultarEstoqueToolStripMenuItem.Name = "consultarEstoqueToolStripMenuItem";
-            resources.ApplyResources(this.consultarEstoqueToolStripMenuItem, "consultarEstoqueToolStripMenuItem");
-            // 
-            // efetuarSaídaEntradaToolStripMenuItem
-            // 
-            this.efetuarSaídaEntradaToolStripMenuItem.Name = "efetuarSaídaEntradaToolStripMenuItem";
-            resources.ApplyResources(this.efetuarSaídaEntradaToolStripMenuItem, "efetuarSaídaEntradaToolStripMenuItem");
+            this.verLançamentosToolStripMenuItem.Name = "verLançamentosToolStripMenuItem";
+            resources.ApplyResources(this.verLançamentosToolStripMenuItem, "verLançamentosToolStripMenuItem");
             // 
             // relátoriosELivrosToolStripMenuItem
             // 
@@ -134,7 +109,6 @@
             this.relatóriosToolStripMenuItem});
             this.relátoriosELivrosToolStripMenuItem.Name = "relátoriosELivrosToolStripMenuItem";
             resources.ApplyResources(this.relátoriosELivrosToolStripMenuItem, "relátoriosELivrosToolStripMenuItem");
-            this.relátoriosELivrosToolStripMenuItem.Click += new System.EventHandler(this.relátoriosELivrosToolStripMenuItem_Click);
             // 
             // livrosToolStripMenuItem
             // 
@@ -184,10 +158,35 @@
             this.fluxoEntradaESaídaestoqueToolStripMenuItem.Name = "fluxoEntradaESaídaestoqueToolStripMenuItem";
             resources.ApplyResources(this.fluxoEntradaESaídaestoqueToolStripMenuItem, "fluxoEntradaESaídaestoqueToolStripMenuItem");
             // 
-            // configuraçõesToolStripMenuItem
+            // estoqueToolStripMenuItem
             // 
-            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            resources.ApplyResources(this.configuraçõesToolStripMenuItem, "configuraçõesToolStripMenuItem");
+            this.estoqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultarEstoqueToolStripMenuItem,
+            this.efetuarSaídaEntradaToolStripMenuItem});
+            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
+            resources.ApplyResources(this.estoqueToolStripMenuItem, "estoqueToolStripMenuItem");
+            // 
+            // consultarEstoqueToolStripMenuItem
+            // 
+            this.consultarEstoqueToolStripMenuItem.Name = "consultarEstoqueToolStripMenuItem";
+            resources.ApplyResources(this.consultarEstoqueToolStripMenuItem, "consultarEstoqueToolStripMenuItem");
+            // 
+            // efetuarSaídaEntradaToolStripMenuItem
+            // 
+            this.efetuarSaídaEntradaToolStripMenuItem.Name = "efetuarSaídaEntradaToolStripMenuItem";
+            resources.ApplyResources(this.efetuarSaídaEntradaToolStripMenuItem, "efetuarSaídaEntradaToolStripMenuItem");
+            // 
+            // status_strip
+            // 
+            this.status_strip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbl_usuario});
+            resources.ApplyResources(this.status_strip, "status_strip");
+            this.status_strip.Name = "status_strip";
+            // 
+            // lbl_usuario
+            // 
+            this.lbl_usuario.Name = "lbl_usuario";
+            resources.ApplyResources(this.lbl_usuario, "lbl_usuario");
             // 
             // frm_principal
             // 
@@ -218,7 +217,7 @@
         private System.Windows.Forms.ToolStripMenuItem lançamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verLançamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_config;
         private System.Windows.Forms.ToolStripMenuItem novoLançamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relátoriosELivrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem livrosToolStripMenuItem;

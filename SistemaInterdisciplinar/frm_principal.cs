@@ -43,12 +43,7 @@ namespace SistemaInterdisciplinar
             }
         }
 
-        private void relátoriosELivrosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void estoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mscmd_config_Click(object sender, EventArgs e)
         {
 
         }
