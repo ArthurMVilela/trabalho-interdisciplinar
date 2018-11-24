@@ -31,6 +31,7 @@ namespace SistemaInterdisciplinar
             //atualizar a barra de status.
             lbl_usuario.Text = "USUÁRIO: " + usuario.getNome() + ".";
 
+            ;
         }
 
         private void mscmd_sair_Click(object sender, EventArgs e)
@@ -45,7 +46,8 @@ namespace SistemaInterdisciplinar
 
         private void mscmd_config_Click(object sender, EventArgs e)
         {
-
+            frm_config config = new frm_config();
+            config.Show();
         }
     }
 }

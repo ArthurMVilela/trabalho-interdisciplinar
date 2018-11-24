@@ -20,7 +20,7 @@ namespace SistemaInterdisciplinar
             try
             {
                 conexao.Open();
-                MessageBox.Show("Sucesso!");
+                //MessageBox.Show("Sucesso!");
                 
             } catch (Exception ex)
             {
