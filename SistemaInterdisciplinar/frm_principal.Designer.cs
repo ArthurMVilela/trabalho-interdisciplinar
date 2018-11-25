@@ -36,6 +36,7 @@
             this.lançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoLançamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verLançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verContasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relátoriosELivrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,7 +89,8 @@
             // 
             this.lançamentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoLançamentoToolStripMenuItem,
-            this.verLançamentosToolStripMenuItem});
+            this.verLançamentosToolStripMenuItem,
+            this.verContasToolStripMenuItem});
             this.lançamentosToolStripMenuItem.Name = "lançamentosToolStripMenuItem";
             resources.ApplyResources(this.lançamentosToolStripMenuItem, "lançamentosToolStripMenuItem");
             // 
@@ -101,6 +103,12 @@
             // 
             this.verLançamentosToolStripMenuItem.Name = "verLançamentosToolStripMenuItem";
             resources.ApplyResources(this.verLançamentosToolStripMenuItem, "verLançamentosToolStripMenuItem");
+            // 
+            // verContasToolStripMenuItem
+            // 
+            this.verContasToolStripMenuItem.Name = "verContasToolStripMenuItem";
+            resources.ApplyResources(this.verContasToolStripMenuItem, "verContasToolStripMenuItem");
+            this.verContasToolStripMenuItem.Click += new System.EventHandler(this.verContasToolStripMenuItem_Click);
             // 
             // relátoriosELivrosToolStripMenuItem
             // 
@@ -230,5 +238,6 @@
         private System.Windows.Forms.ToolStripMenuItem fluxoEntradaESaídaestoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarEstoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem efetuarSaídaEntradaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verContasToolStripMenuItem;
     }
 }

@@ -121,11 +121,10 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(14, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(328, 68);
+            this.label3.Size = new System.Drawing.Size(270, 51);
             this.label3.TabIndex = 4;
             this.label3.Text = "[9] \"nove\" - posição só aceita números\r\n[l] \"L minúsculo\" - posição só aceita let" +
-    "ras\r\n[a] \"A minúsculo\" - posição aceita letras e números\r\n[.], [-] e [\\] - separ" +
-    "adores";
+    "ras\r\n[-] - separado";
             // 
             // txt_class_impressao
             // 

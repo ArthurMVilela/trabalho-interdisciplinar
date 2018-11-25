@@ -151,10 +151,10 @@
     <value>Sair</value>
   </data>
   <data name="arquivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
+    <value>71, 20</value>
   </data>
   <data name="arquivoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Arquivo</value>
+    <value>Aplicação</value>
   </data>
   <data name="novoLançamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -168,11 +168,17 @@
   <data name="verLançamentosToolStripMenuItem.Text" xml:space="preserve">
     <value>Ver lançamentos</value>
   </data>
+  <data name="verContasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="verContasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ver Contas</value>
+  </data>
   <data name="lançamentosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
+    <value>139, 20</value>
   </data>
   <data name="lançamentosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lançamentos</value>
+    <value>Contas e Lançamentos</value>
   </data>
   <data name="diárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
@@ -199,7 +205,7 @@
     <value>DRE</value>
   </data>
   <data name="livrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="livrosToolStripMenuItem.Text" xml:space="preserve">
     <value>Livros</value>
@@ -217,7 +223,7 @@
     <value>Fluxo Entrada e Saída (estoque)</value>
   </data>
   <data name="relatóriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="relatóriosToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatórios</value>
@@ -354,6 +360,12 @@
     <value>verLançamentosToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;verLançamentosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;verContasToolStripMenuItem.Name" xml:space="preserve">
+    <value>verContasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;verContasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;relátoriosELivrosToolStripMenuItem.Name" xml:space="preserve">

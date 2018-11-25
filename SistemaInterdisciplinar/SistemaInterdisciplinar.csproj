@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Configuracoes.cs" />
     <Compile Include="CtrlConexao.cs" />
+    <Compile Include="CtrlContas.cs" />
     <Compile Include="CtrlLogin.cs" />
     <Compile Include="frm_cadastro.cs">
       <SubType>Form</SubType>
@@ -61,6 +62,12 @@
     </Compile>
     <Compile Include="frm_config.Designer.cs">
       <DependentUpon>frm_config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_contas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_contas.Designer.cs">
+      <DependentUpon>frm_contas.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -82,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_config.resx">
       <DependentUpon>frm_config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_contas.resx">
+      <DependentUpon>frm_contas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>

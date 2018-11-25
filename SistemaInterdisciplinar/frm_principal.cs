@@ -49,5 +49,12 @@ namespace SistemaInterdisciplinar
             frm_config config = new frm_config();
             config.Show();
         }
+
+        private void verContasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_contas contas = new frm_contas();
+
+            contas.Show();
+        }
     }
 }
