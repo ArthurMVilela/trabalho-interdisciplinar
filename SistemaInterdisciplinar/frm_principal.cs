@@ -56,5 +56,12 @@ namespace SistemaInterdisciplinar
 
             contas.Show();
         }
+
+        private void novoLançamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_novo_lancamento lancamento = new frm_novo_lancamento();
+
+            lancamento.Show();
+        }
     }
 }

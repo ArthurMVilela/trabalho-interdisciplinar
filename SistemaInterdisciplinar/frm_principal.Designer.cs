@@ -98,6 +98,7 @@
             // 
             this.novoLançamentoToolStripMenuItem.Name = "novoLançamentoToolStripMenuItem";
             resources.ApplyResources(this.novoLançamentoToolStripMenuItem, "novoLançamentoToolStripMenuItem");
+            this.novoLançamentoToolStripMenuItem.Click += new System.EventHandler(this.novoLançamentoToolStripMenuItem_Click);
             // 
             // verLançamentosToolStripMenuItem
             // 

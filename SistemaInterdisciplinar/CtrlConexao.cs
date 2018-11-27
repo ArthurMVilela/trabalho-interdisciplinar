@@ -45,6 +45,7 @@ namespace SistemaInterdisciplinar
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                MessageBox.Show(query);
             }
         }
 
