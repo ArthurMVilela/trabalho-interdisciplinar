@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbDataSet" targetNamespace="http://tempuri.org/dbDataSet.xsd" xmlns:mstns="http://tempuri.org/dbDataSet.xsd" xmlns="http://tempuri.org/dbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbConnectionString (Settings)" PropertyReference="ApplicationSettings.SistemaInterdisciplinar.Properties.Settings.GlobalReference.Default.dbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="contasTableAdapter" GeneratorDataComponentClassName="contasTableAdapter" Name="contas" UserDataComponentName="contasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (Settings)" DbObjectName="contas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT n2, n3, n4, n5, tipo, [desc], total FROM contas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="n2" DataSetColumn="n2" />
+              <Mapping SourceColumn="n3" DataSetColumn="n3" />
+              <Mapping SourceColumn="n4" DataSetColumn="n4" />
+              <Mapping SourceColumn="n5" DataSetColumn="n5" />
+              <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
+              <Mapping SourceColumn="desc" DataSetColumn="desc" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbDataSet" msprop:Generator_UserDSName="dbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="contas" msprop:Generator_TableClassName="contasDataTable" msprop:Generator_TableVarName="tablecontas" msprop:Generator_TablePropName="contas" msprop:Generator_RowDeletingName="contasRowDeleting" msprop:Generator_RowChangingName="contasRowChanging" msprop:Generator_RowEvHandlerName="contasRowChangeEventHandler" msprop:Generator_RowDeletedName="contasRowDeleted" msprop:Generator_UserTableName="contas" msprop:Generator_RowChangedName="contasRowChanged" msprop:Generator_RowEvArgName="contasRowChangeEvent" msprop:Generator_RowClassName="contasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="n2" msprop:Generator_ColumnVarNameInTable="columnn2" msprop:Generator_ColumnPropNameInRow="n2" msprop:Generator_ColumnPropNameInTable="n2Column" msprop:Generator_UserColumnName="n2" type="xs:short" minOccurs="0" />
+              <xs:element name="n3" msprop:Generator_ColumnVarNameInTable="columnn3" msprop:Generator_ColumnPropNameInRow="n3" msprop:Generator_ColumnPropNameInTable="n3Column" msprop:Generator_UserColumnName="n3" type="xs:short" minOccurs="0" />
+              <xs:element name="n4" msprop:Generator_ColumnVarNameInTable="columnn4" msprop:Generator_ColumnPropNameInRow="n4" msprop:Generator_ColumnPropNameInTable="n4Column" msprop:Generator_UserColumnName="n4" type="xs:short" minOccurs="0" />
+              <xs:element name="n5" msprop:Generator_ColumnVarNameInTable="columnn5" msprop:Generator_ColumnPropNameInRow="n5" msprop:Generator_ColumnPropNameInTable="n5Column" msprop:Generator_UserColumnName="n5" type="xs:short" minOccurs="0" />
+              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="desc" msprop:Generator_ColumnVarNameInTable="columndesc" msprop:Generator_ColumnPropNameInRow="desc" msprop:Generator_ColumnPropNameInTable="descColumn" msprop:Generator_UserColumnName="desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

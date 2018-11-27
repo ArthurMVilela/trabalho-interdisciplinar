@@ -13,6 +13,7 @@ namespace SistemaInterdisciplinar
     class CtrlLogin
     {
         private CtrlConexao conexao; //Objeto para gerenciar conexão com o banco de dados
+        Usuario usuario;
 
         public CtrlLogin()
         {
@@ -90,9 +91,13 @@ namespace SistemaInterdisciplinar
                     if (chave == gerarChave(senha, salt))
                     {
                         //logar usuário
-                        MessageBox.Show("Logado com sucesso");
+                        //MessageBox.Show("Logado com sucesso");
                         //retorna um objeto usuario valido com as informações validas
-                        return new Usuario(id, nome, role);
+                        usuario = new Usuario(id, nome, role);
+
+                        conexao.log(usuario, "Logou no sistema.");
+
+                        return usuario;
                     }
                     else
                     {

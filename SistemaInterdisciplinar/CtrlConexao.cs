@@ -66,5 +66,13 @@ namespace SistemaInterdisciplinar
             }
             return null;
         }
+
+        public void log(Usuario usr, string acao)
+        {
+            string query = "INSERT INTO logs (id_usuario,data,acao) VALUES (" + usr.getId().ToString() + ", '" + DateTime.Now.ToString() +"', '"+ acao +"')";
+
+
+            executarComando(query);
+        }
     }
 }

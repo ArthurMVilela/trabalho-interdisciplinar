@@ -13,3 +13,6 @@ D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInte
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_config.resources
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_contas.resources
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_novo_lancamento.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\db.accdb
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_contas_grade.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_logs.resources

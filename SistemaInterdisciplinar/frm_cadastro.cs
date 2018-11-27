@@ -73,5 +73,10 @@ namespace SistemaInterdisciplinar
         {
             cmb_cargo.SelectedIndex = 0;
         }
+
+        private void txt_rsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

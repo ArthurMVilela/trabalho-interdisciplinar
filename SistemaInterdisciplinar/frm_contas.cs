@@ -23,6 +23,12 @@ namespace SistemaInterdisciplinar
             InitializeComponent();
         }
 
+        private void btn_visualizar_Click(object sender, EventArgs e)
+        {
+            frm_contas_grade grade = new frm_contas_grade();
+            grade.ShowDialog();
+        }
+
         private void frm_contas_Load(object sender, EventArgs e)
         {
             ctrl = new CtrlContas();

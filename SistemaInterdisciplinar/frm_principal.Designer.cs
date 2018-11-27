@@ -49,6 +49,9 @@
             this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.efetuarSaídaEntradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarLogDeAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.status_strip = new System.Windows.Forms.StatusStrip();
             this.lbl_usuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu_principal.SuspendLayout();
@@ -57,12 +60,13 @@
             // 
             // menu_principal
             // 
+            resources.ApplyResources(this.menu_principal, "menu_principal");
             this.menu_principal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
             this.lançamentosToolStripMenuItem,
             this.relátoriosELivrosToolStripMenuItem,
-            this.estoqueToolStripMenuItem});
-            resources.ApplyResources(this.menu_principal, "menu_principal");
+            this.estoqueToolStripMenuItem,
+            this.sistemaToolStripMenuItem});
             this.menu_principal.Name = "menu_principal";
             // 
             // arquivoToolStripMenuItem
@@ -185,6 +189,25 @@
             this.efetuarSaídaEntradaToolStripMenuItem.Name = "efetuarSaídaEntradaToolStripMenuItem";
             resources.ApplyResources(this.efetuarSaídaEntradaToolStripMenuItem, "efetuarSaídaEntradaToolStripMenuItem");
             // 
+            // sistemaToolStripMenuItem
+            // 
+            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarUsuárioToolStripMenuItem,
+            this.consultarLogDeAcessoToolStripMenuItem});
+            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
+            resources.ApplyResources(this.sistemaToolStripMenuItem, "sistemaToolStripMenuItem");
+            // 
+            // administrarUsuárioToolStripMenuItem
+            // 
+            this.administrarUsuárioToolStripMenuItem.Name = "administrarUsuárioToolStripMenuItem";
+            resources.ApplyResources(this.administrarUsuárioToolStripMenuItem, "administrarUsuárioToolStripMenuItem");
+            // 
+            // consultarLogDeAcessoToolStripMenuItem
+            // 
+            this.consultarLogDeAcessoToolStripMenuItem.Name = "consultarLogDeAcessoToolStripMenuItem";
+            resources.ApplyResources(this.consultarLogDeAcessoToolStripMenuItem, "consultarLogDeAcessoToolStripMenuItem");
+            this.consultarLogDeAcessoToolStripMenuItem.Click += new System.EventHandler(this.consultarLogDeAcessoToolStripMenuItem_Click);
+            // 
             // status_strip
             // 
             this.status_strip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -206,6 +229,7 @@
             this.MainMenuStrip = this.menu_principal;
             this.Name = "frm_principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_principal_FormClosing);
             this.Load += new System.EventHandler(this.frm_principal_Load);
             this.menu_principal.ResumeLayout(false);
             this.menu_principal.PerformLayout();
@@ -240,5 +264,8 @@
         private System.Windows.Forms.ToolStripMenuItem consultarEstoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem efetuarSaídaEntradaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verContasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarLogDeAcessoToolStripMenuItem;
     }
 }

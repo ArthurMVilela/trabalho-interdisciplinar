@@ -39,13 +39,14 @@
             this.btn_excluir = new System.Windows.Forms.Button();
             this.mtxt_cod_parent = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_visualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trv_contas
             // 
             this.trv_contas.Location = new System.Drawing.Point(347, 12);
             this.trv_contas.Name = "trv_contas";
-            this.trv_contas.Size = new System.Drawing.Size(486, 527);
+            this.trv_contas.Size = new System.Drawing.Size(486, 478);
             this.trv_contas.TabIndex = 0;
             this.trv_contas.Click += new System.EventHandler(this.trv_contas_Click);
             // 
@@ -150,11 +151,22 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Conta de origem";
             // 
+            // btn_visualizar
+            // 
+            this.btn_visualizar.Location = new System.Drawing.Point(711, 496);
+            this.btn_visualizar.Name = "btn_visualizar";
+            this.btn_visualizar.Size = new System.Drawing.Size(122, 34);
+            this.btn_visualizar.TabIndex = 11;
+            this.btn_visualizar.Text = "Visualizar em grade";
+            this.btn_visualizar.UseVisualStyleBackColor = true;
+            this.btn_visualizar.Click += new System.EventHandler(this.btn_visualizar_Click);
+            // 
             // frm_contas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 551);
+            this.Controls.Add(this.btn_visualizar);
             this.Controls.Add(this.mtxt_cod_parent);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_excluir);
@@ -187,5 +199,6 @@
         private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.MaskedTextBox mtxt_cod_parent;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_visualizar;
     }
 }

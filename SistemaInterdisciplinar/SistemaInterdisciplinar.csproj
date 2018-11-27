@@ -51,6 +51,21 @@
     <Compile Include="CtrlConexao.cs" />
     <Compile Include="CtrlContas.cs" />
     <Compile Include="CtrlLogin.cs" />
+    <Compile Include="dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,11 +84,23 @@
     <Compile Include="frm_contas.Designer.cs">
       <DependentUpon>frm_contas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_contas_grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_contas_grade.Designer.cs">
+      <DependentUpon>frm_contas_grade.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_logs.Designer.cs">
+      <DependentUpon>frm_logs.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_novo_lancamento.cs">
       <SubType>Form</SubType>
@@ -99,8 +126,14 @@
     <EmbeddedResource Include="frm_contas.resx">
       <DependentUpon>frm_contas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_contas_grade.resx">
+      <DependentUpon>frm_contas_grade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_logs.resx">
+      <DependentUpon>frm_logs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_novo_lancamento.resx">
       <DependentUpon>frm_novo_lancamento.cs</DependentUpon>
@@ -117,6 +150,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="dbDataSet.xsc">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet.xss">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet1.xsc">
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet1.xss">
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet2.xsc">
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet2.xss">
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,6 +195,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

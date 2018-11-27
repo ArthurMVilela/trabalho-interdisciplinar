@@ -37,5 +37,13 @@ namespace SistemaInterdisciplinar
         {
             return nome;
         }
+        public long getId()
+        {
+            return id;
+        }
+        public string getRole()
+        {
+            return role;
+        }
     }
 }
