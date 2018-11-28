@@ -45,6 +45,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cmb_cargo = new System.Windows.Forms.ComboBox();
             this.btn_criar_conta = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lbl_status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -123,10 +126,10 @@
             // 
             // txt_endereco
             // 
-            this.txt_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_endereco.Location = new System.Drawing.Point(100, 142);
+            this.txt_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_endereco.Location = new System.Drawing.Point(100, 146);
             this.txt_endereco.Name = "txt_endereco";
-            this.txt_endereco.Size = new System.Drawing.Size(313, 30);
+            this.txt_endereco.Size = new System.Drawing.Size(313, 26);
             this.txt_endereco.TabIndex = 9;
             // 
             // label5
@@ -141,10 +144,11 @@
             // 
             // txt_senha
             // 
-            this.txt_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_senha.Location = new System.Drawing.Point(140, 197);
+            this.txt_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_senha.Location = new System.Drawing.Point(140, 201);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(163, 30);
+            this.txt_senha.PasswordChar = '*';
+            this.txt_senha.Size = new System.Drawing.Size(163, 26);
             this.txt_senha.TabIndex = 11;
             // 
             // label6
@@ -160,11 +164,12 @@
             // txt_rsenha
             // 
             this.txt_rsenha.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_rsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_rsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rsenha.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_rsenha.Location = new System.Drawing.Point(140, 236);
             this.txt_rsenha.Name = "txt_rsenha";
-            this.txt_rsenha.Size = new System.Drawing.Size(163, 30);
+            this.txt_rsenha.PasswordChar = '*';
+            this.txt_rsenha.Size = new System.Drawing.Size(163, 26);
             this.txt_rsenha.TabIndex = 13;
             this.txt_rsenha.TextChanged += new System.EventHandler(this.txt_rsenha_TextChanged);
             this.txt_rsenha.Leave += new System.EventHandler(this.txt_rsenha_Leave);
@@ -173,7 +178,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 243);
+            this.label7.Location = new System.Drawing.Point(12, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 20);
             this.label7.TabIndex = 12;
@@ -191,15 +196,15 @@
             // 
             // cmb_cargo
             // 
-            this.cmb_cargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_cargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_cargo.FormattingEnabled = true;
             this.cmb_cargo.Items.AddRange(new object[] {
             "Administrador",
             "Contador",
             "Gerente"});
-            this.cmb_cargo.Location = new System.Drawing.Point(71, 296);
+            this.cmb_cargo.Location = new System.Drawing.Point(70, 300);
             this.cmb_cargo.Name = "cmb_cargo";
-            this.cmb_cargo.Size = new System.Drawing.Size(233, 33);
+            this.cmb_cargo.Size = new System.Drawing.Size(233, 28);
             this.cmb_cargo.TabIndex = 15;
             // 
             // btn_criar_conta
@@ -213,11 +218,27 @@
             this.btn_criar_conta.UseVisualStyleBackColor = true;
             this.btn_criar_conta.Click += new System.EventHandler(this.btn_criar_conta_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbl_status});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 402);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(631, 22);
+            this.statusStrip1.TabIndex = 17;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lbl_status
+            // 
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Size = new System.Drawing.Size(0, 17);
+            // 
             // frm_cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 402);
+            this.ClientSize = new System.Drawing.Size(631, 424);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_criar_conta);
             this.Controls.Add(this.cmb_cargo);
             this.Controls.Add(this.label8);
@@ -236,8 +257,10 @@
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.label1);
             this.Name = "frm_cadastro";
-            this.Text = "frm_cadastro";
+            this.Text = "Cadastro de Usuário";
             this.Load += new System.EventHandler(this.frm_cadastro_Load);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +285,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmb_cargo;
         private System.Windows.Forms.Button btn_criar_conta;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lbl_status;
     }
 }

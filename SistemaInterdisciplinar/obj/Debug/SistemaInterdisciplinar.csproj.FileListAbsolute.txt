@@ -16,3 +16,4 @@ D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInte
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\db.accdb
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_contas_grade.resources
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_logs.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_es_estoque.resources

@@ -124,6 +124,10 @@
   <data name="menu_principal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mscmd_config.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="mscmd_config.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAArVJREFUaEPt
@@ -142,13 +146,27 @@
 </value>
   </data>
   <data name="mscmd_config.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 24</value>
+    <value>180, 24</value>
   </data>
   <data name="mscmd_config.Text" xml:space="preserve">
     <value>Configurações</value>
   </data>
+  <data name="mscmd_config.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mscmd_sair.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEnSURBVFhH7ZfPCgFRFIdna2OhFG/Cio0NnoiNF6DsFY8iD0Gx4DFkw+/XdOqmm3vOzJxQ89VX
+        k+4998v4m9XUODKAM7ioWM7kbBNr+HSWZ6iYwNgAD6cwyRzKhj18f8rLypkyn2cl4SbZwOuqMc//+6AG
+        7OWXKlyDmvAA73DIBxS4Bm2hrNVGmYM4lAtp6oAWPEJLlDnIShueoTbKPYh04RVqosxB4S2zGL6ePkVx
+        rSko3FDWWNRXgx5wBEPMQUVv2QamYgjXmoKK0IE3mIoh7kF821+gJoaYg8JbFnuXhPCD8QS1McQcZNmw
+        g7JWE0Ncg+TLVRtDXIMIf37080sV7kFW/j+I/5tkg/ePfJ6VZAxlg7c8S8UKxgZU6RKa+Km/0jU1OrLs
+        BW+WX2LW9nGiAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="mscmd_sair.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 24</value>
+    <value>180, 24</value>
   </data>
   <data name="mscmd_sair.Text" xml:space="preserve">
     <value>Sair</value>
@@ -158,6 +176,30 @@
   </data>
   <data name="arquivoToolStripMenuItem.Text" xml:space="preserve">
     <value>Aplicação</value>
+  </data>
+  <data name="consultarEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="consultarEstoqueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar Estoque</value>
+  </data>
+  <data name="efetuarSaídaEntradaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="efetuarSaídaEntradaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Efetuar Saída/Entrada</value>
+  </data>
+  <data name="mscmd_estoque.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mscmd_estoque.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 23</value>
+  </data>
+  <data name="mscmd_estoque.Text" xml:space="preserve">
+    <value>Estoque</value>
+  </data>
+  <data name="mscmd_estoque.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="novoLançamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 24</value>
@@ -177,11 +219,17 @@
   <data name="verContasToolStripMenuItem.Text" xml:space="preserve">
     <value>Ver Contas</value>
   </data>
-  <data name="lançamentosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mscmd_contas.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mscmd_contas.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 23</value>
   </data>
-  <data name="lançamentosToolStripMenuItem.Text" xml:space="preserve">
+  <data name="mscmd_contas.Text" xml:space="preserve">
     <value>Contas e Lançamentos</value>
+  </data>
+  <data name="mscmd_contas.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="diárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 24</value>
@@ -208,7 +256,7 @@
     <value>DRE</value>
   </data>
   <data name="livrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 24</value>
+    <value>180, 24</value>
   </data>
   <data name="livrosToolStripMenuItem.Text" xml:space="preserve">
     <value>Livros</value>
@@ -226,34 +274,63 @@
     <value>Fluxo Entrada e Saída (estoque)</value>
   </data>
   <data name="relatóriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 24</value>
+    <value>180, 24</value>
   </data>
   <data name="relatóriosToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatórios</value>
   </data>
-  <data name="relátoriosELivrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mscmd_relatorios.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mscmd_relatorios.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 23</value>
   </data>
-  <data name="relátoriosELivrosToolStripMenuItem.Text" xml:space="preserve">
+  <data name="mscmd_relatorios.Text" xml:space="preserve">
     <value>Relatórios e livros</value>
   </data>
-  <data name="consultarEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
+  <data name="mscmd_relatorios.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="consultarEstoqueToolStripMenuItem.Text" xml:space="preserve">
-    <value>Consultar Estoque</value>
+  <data name="cadastrarUsuárioToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFDSURBVFhH7da/LgVBGIbxRdCeggLXwYWImogScU0kJK5BopJwLkBoBIXoVGh53sQmmy/f7Oxu
+        ZtYp5kl+iTgz346/c6pSaQZaxhGe8PNHHx9Cr43aOh5QH8TSa2sYpTncwjtI0w20NnsH8A7g2cPg7LBQ
+        U9i1IfouDc4OC/UFuzbkA4Ozw0J9wq4NGeVAd7BrQ3r9yLwBber6/FLvonPegDZ18+j6Z6+1nfOGtGm2
+        gXt460Sv6Z9nr7xBbWy6HnRNNK+OF+g6SXJ1NB8u/145UKyZO1CXlrCJE5zjGfYL0ecucIwtLCJpC9jB
+        Jb5hDxCjq0Z7t6FZg9N7mX28wnvQEJqlmb3fJ63gGt7QFK6wik5N8AhvUEp6hp4V7RTegBzOEO0d3uYc
+        3hDN25hTNG9TTtG8TTlF8zblFM3blFOplKCq+gUG3+Acd737vAAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="efetuarSaídaEntradaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
+  <data name="cadastrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 24</value>
   </data>
-  <data name="efetuarSaídaEntradaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Efetuar Saída/Entrada</value>
+  <data name="cadastrarUsuárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastrar Usuário</value>
   </data>
-  <data name="estoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 23</value>
+  <data name="desbloquearContaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAF3SURBVFhH7ZY7SgRBFEXHXFAQURdgpGLgBlyDYGJoIApm5qKRzgLcgAYauARXoC7CwG+kmJj4
+        Oxe6oBj6OVXzqqdh8MCB5s27t3s+PXRn1JjEVdyt1LFmQ2cWz/HH8AJncCjM4z3WXUisdrTbKPpkHjCc
+        9AsvcRPDV/eI4XXtzmFjnGE42R2uYC/jeIVhT5lGmMBv1Ek+cRktpvAdtauMssVZw/CuTzXowwmG/XUN
+        SrOH4QRbGvRBO2Ff2dbZwHBBBxq0zehf0Bge4jOGYq/qUqe6sznGutISdjGbN6wrK+ErZhMXlMLV6Qob
+        uDpdYQNXpyts4OpMDU/jdqWO/yK1s5aU8BLG/1M61swipdMkJXyD8Z68RYt4L5uU8AfGe1Izi3gvm5Tw
+        NcZ7UjOLeC+blPACPmHY029oES1SOk1Sw7qzdipbv8tycXW6wgauTlfYwNXpChu4Oks+Kfaq7myOsK6s
+        hHoaHYh9fMG60kFUl56p/xkVOp1f9+o6AB6VTiQAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="estoqueToolStripMenuItem.Text" xml:space="preserve">
-    <value>Estoque</value>
+  <data name="desbloquearContaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 24</value>
+  </data>
+  <data name="desbloquearContaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Desbloquear conta</value>
+  </data>
+  <data name="alterarSenhaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 24</value>
+  </data>
+  <data name="alterarSenhaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Alterar Senha</value>
   </data>
   <data name="administrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 24</value>
@@ -267,11 +344,17 @@
   <data name="consultarLogDeAcessoToolStripMenuItem.Text" xml:space="preserve">
     <value>Consultar Log de Acesso</value>
   </data>
-  <data name="sistemaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mscmd_sistema.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mscmd_sistema.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
   </data>
-  <data name="sistemaToolStripMenuItem.Text" xml:space="preserve">
+  <data name="mscmd_sistema.Text" xml:space="preserve">
     <value>Sistema</value>
+  </data>
+  <data name="mscmd_sistema.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="menu_principal.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -279,7 +362,6 @@
   <data name="menu_principal.Size" type="System.Drawing.Size, System.Drawing">
     <value>800, 27</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menu_principal.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -365,10 +447,10 @@
   <data name="&gt;&gt;mscmd_sair.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lançamentosToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentosToolStripMenuItem</value>
+  <data name="&gt;&gt;mscmd_contas.Name" xml:space="preserve">
+    <value>mscmd_contas</value>
   </data>
-  <data name="&gt;&gt;lançamentosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;mscmd_contas.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;novoLançamentoToolStripMenuItem.Name" xml:space="preserve">
@@ -389,10 +471,10 @@
   <data name="&gt;&gt;verContasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;relátoriosELivrosToolStripMenuItem.Name" xml:space="preserve">
-    <value>relátoriosELivrosToolStripMenuItem</value>
+  <data name="&gt;&gt;mscmd_relatorios.Name" xml:space="preserve">
+    <value>mscmd_relatorios</value>
   </data>
-  <data name="&gt;&gt;relátoriosELivrosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;mscmd_relatorios.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;livrosToolStripMenuItem.Name" xml:space="preserve">
@@ -443,10 +525,10 @@
   <data name="&gt;&gt;fluxoEntradaESaídaestoqueToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;estoqueToolStripMenuItem.Name" xml:space="preserve">
-    <value>estoqueToolStripMenuItem</value>
+  <data name="&gt;&gt;mscmd_estoque.Name" xml:space="preserve">
+    <value>mscmd_estoque</value>
   </data>
-  <data name="&gt;&gt;estoqueToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;mscmd_estoque.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;consultarEstoqueToolStripMenuItem.Name" xml:space="preserve">
@@ -461,16 +543,22 @@
   <data name="&gt;&gt;efetuarSaídaEntradaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sistemaToolStripMenuItem.Name" xml:space="preserve">
-    <value>sistemaToolStripMenuItem</value>
+  <data name="&gt;&gt;mscmd_sistema.Name" xml:space="preserve">
+    <value>mscmd_sistema</value>
   </data>
-  <data name="&gt;&gt;sistemaToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;mscmd_sistema.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;administrarUsuárioToolStripMenuItem.Name" xml:space="preserve">
     <value>administrarUsuárioToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;administrarUsuárioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cadastrarUsuárioToolStripMenuItem.Name" xml:space="preserve">
+    <value>cadastrarUsuárioToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cadastrarUsuárioToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;consultarLogDeAcessoToolStripMenuItem.Name" xml:space="preserve">
@@ -484,6 +572,18 @@
   </data>
   <data name="&gt;&gt;lbl_usuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;desbloquearContaToolStripMenuItem.Name" xml:space="preserve">
+    <value>desbloquearContaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;desbloquearContaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alterarSenhaToolStripMenuItem.Name" xml:space="preserve">
+    <value>alterarSenhaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;alterarSenhaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_principal</value>

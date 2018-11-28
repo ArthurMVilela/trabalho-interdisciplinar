@@ -12,7 +12,9 @@ namespace SistemaInterdisciplinar
         public static string mascaraInterna = System.Configuration.ConfigurationManager.AppSettings["mascaraInterna"];
         public static string mascaraImpressao = System.Configuration.ConfigurationManager.AppSettings["mascaraImpressao"];
         public static string nomeEmpresa = System.Configuration.ConfigurationManager.AppSettings["nomeEmpresa"];
-        
+        public static string codEstoque = System.Configuration.ConfigurationManager.AppSettings["codEstoque"];
+        public static string codFornecedores = System.Configuration.ConfigurationManager.AppSettings["codFornecedores"];
+
         //reseta as configurações para o padrão
         public static void reset()
         {

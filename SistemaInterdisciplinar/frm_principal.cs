@@ -33,9 +33,33 @@ namespace SistemaInterdisciplinar
             this.Enabled = true;
 
             //atualizar a barra de status.
-            lbl_usuario.Text = "USUÁRIO: " + usuario.getNome() + "| " + usuario.getRole() + ".";
+            lbl_usuario.Text = "USUÁRIO: " + usuario.getNome() + " | " + usuario.getRole() + ".";
 
-            
+            switch (usuario.getRole())
+            {
+                case "ADMIN":
+                    mscmd_sistema.Visible = true;
+                    mscmd_sistema.Enabled = true;
+
+                    mscmd_config.Visible = true;
+                    mscmd_config.Enabled = true;
+
+
+                    break;
+                case "CONTB":
+                    mscmd_contas.Visible = true;
+                    mscmd_contas.Enabled = true;
+
+                    mscmd_relatorios.Visible = true;
+                    mscmd_relatorios.Enabled = true;
+
+                    break;
+                case "GEREN":
+                    mscmd_estoque.Visible = true;
+                    mscmd_estoque.Enabled = true;
+
+                    break;
+            }
         }
 
         private void mscmd_sair_Click(object sender, EventArgs e)
@@ -78,6 +102,21 @@ namespace SistemaInterdisciplinar
         private void consultarLogDeAcessoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new frm_logs().Show();
+        }
+
+        private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frm_cadastro().Show();
+        }
+
+        private void consultarEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void efetuarSaídaEntradaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frm_es_estoque().Show();
         }
     }
 }

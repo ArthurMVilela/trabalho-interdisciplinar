@@ -59,6 +59,9 @@ namespace SistemaInterdisciplinar
 
             CtrlLogin ctrlLogin = new CtrlLogin();
             ctrlLogin.cadastrarUsuario(txt_nome.Text, txt_email.Text, mtxt_cpf.Text, mtxt_cep.Text, txt_endereco.Text, senha, cargo);
+
+            MessageBox.Show("Usuário cadastrado com sucesso!");
+            this.Close();
         }
 
         private void txt_rsenha_Leave(object sender, EventArgs e)
@@ -76,7 +79,13 @@ namespace SistemaInterdisciplinar
 
         private void txt_rsenha_TextChanged(object sender, EventArgs e)
         {
-
+            if (txt_senha.Text != txt_rsenha.Text)
+            {
+                lbl_status.Text = "Os campos de senha estão diferentes.";
+            } else
+            {
+                lbl_status.Text = "";
+            }
         }
     }
 }

@@ -137,9 +137,9 @@ namespace SistemaInterdisciplinar
         public void cadastrarUsuario (string nome, string email, string cpf, string cep, string endereco, string senha, string cargo)
         {
             string salt = gerarSalt(20);
-            MessageBox.Show(salt.Length.ToString());
+            
             string chaveSeguranca = gerarChave(senha, salt);
-            MessageBox.Show(chaveSeguranca.Length.ToString());
+
             string query = "INSERT INTO usuarios (nome, email, cpf, cep, endereco, salt, chave_seguranca, role, tentativas, status)" +
                 "VALUES ('"+ nome +"', '"+ email +"', '"+ cpf +"', '"+ cep +"' , '"+ endereco +"', '"+ salt +"', '"+ chaveSeguranca +"'," +
                 "'"+ cargo +"',"+ 3 +", 'ATIVO')";

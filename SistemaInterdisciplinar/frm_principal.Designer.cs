@@ -33,11 +33,11 @@
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mscmd_config = new System.Windows.Forms.ToolStripMenuItem();
             this.mscmd_sair = new System.Windows.Forms.ToolStripMenuItem();
-            this.lançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_contas = new System.Windows.Forms.ToolStripMenuItem();
             this.novoLançamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verLançamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verContasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relátoriosELivrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_relatorios = new System.Windows.Forms.ToolStripMenuItem();
             this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.balançoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,14 +46,17 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fluxoEntradaESaídaestoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_estoque = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.efetuarSaídaEntradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mscmd_sistema = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarLogDeAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.status_strip = new System.Windows.Forms.StatusStrip();
             this.lbl_usuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.desbloquearContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_principal.SuspendLayout();
             this.status_strip.SuspendLayout();
             this.SuspendLayout();
@@ -63,10 +66,10 @@
             resources.ApplyResources(this.menu_principal, "menu_principal");
             this.menu_principal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.lançamentosToolStripMenuItem,
-            this.relátoriosELivrosToolStripMenuItem,
-            this.estoqueToolStripMenuItem,
-            this.sistemaToolStripMenuItem});
+            this.mscmd_estoque,
+            this.mscmd_contas,
+            this.mscmd_relatorios,
+            this.mscmd_sistema});
             this.menu_principal.Name = "menu_principal";
             // 
             // arquivoToolStripMenuItem
@@ -85,18 +88,18 @@
             // 
             // mscmd_sair
             // 
-            this.mscmd_sair.Name = "mscmd_sair";
             resources.ApplyResources(this.mscmd_sair, "mscmd_sair");
+            this.mscmd_sair.Name = "mscmd_sair";
             this.mscmd_sair.Click += new System.EventHandler(this.mscmd_sair_Click);
             // 
-            // lançamentosToolStripMenuItem
+            // mscmd_contas
             // 
-            this.lançamentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mscmd_contas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoLançamentoToolStripMenuItem,
             this.verLançamentosToolStripMenuItem,
             this.verContasToolStripMenuItem});
-            this.lançamentosToolStripMenuItem.Name = "lançamentosToolStripMenuItem";
-            resources.ApplyResources(this.lançamentosToolStripMenuItem, "lançamentosToolStripMenuItem");
+            resources.ApplyResources(this.mscmd_contas, "mscmd_contas");
+            this.mscmd_contas.Name = "mscmd_contas";
             // 
             // novoLançamentoToolStripMenuItem
             // 
@@ -115,13 +118,13 @@
             resources.ApplyResources(this.verContasToolStripMenuItem, "verContasToolStripMenuItem");
             this.verContasToolStripMenuItem.Click += new System.EventHandler(this.verContasToolStripMenuItem_Click);
             // 
-            // relátoriosELivrosToolStripMenuItem
+            // mscmd_relatorios
             // 
-            this.relátoriosELivrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mscmd_relatorios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.livrosToolStripMenuItem,
             this.relatóriosToolStripMenuItem});
-            this.relátoriosELivrosToolStripMenuItem.Name = "relátoriosELivrosToolStripMenuItem";
-            resources.ApplyResources(this.relátoriosELivrosToolStripMenuItem, "relátoriosELivrosToolStripMenuItem");
+            resources.ApplyResources(this.mscmd_relatorios, "mscmd_relatorios");
+            this.mscmd_relatorios.Name = "mscmd_relatorios";
             // 
             // livrosToolStripMenuItem
             // 
@@ -171,36 +174,48 @@
             this.fluxoEntradaESaídaestoqueToolStripMenuItem.Name = "fluxoEntradaESaídaestoqueToolStripMenuItem";
             resources.ApplyResources(this.fluxoEntradaESaídaestoqueToolStripMenuItem, "fluxoEntradaESaídaestoqueToolStripMenuItem");
             // 
-            // estoqueToolStripMenuItem
+            // mscmd_estoque
             // 
-            this.estoqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mscmd_estoque.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultarEstoqueToolStripMenuItem,
             this.efetuarSaídaEntradaToolStripMenuItem});
-            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            resources.ApplyResources(this.estoqueToolStripMenuItem, "estoqueToolStripMenuItem");
+            resources.ApplyResources(this.mscmd_estoque, "mscmd_estoque");
+            this.mscmd_estoque.Name = "mscmd_estoque";
             // 
             // consultarEstoqueToolStripMenuItem
             // 
             this.consultarEstoqueToolStripMenuItem.Name = "consultarEstoqueToolStripMenuItem";
             resources.ApplyResources(this.consultarEstoqueToolStripMenuItem, "consultarEstoqueToolStripMenuItem");
+            this.consultarEstoqueToolStripMenuItem.Click += new System.EventHandler(this.consultarEstoqueToolStripMenuItem_Click);
             // 
             // efetuarSaídaEntradaToolStripMenuItem
             // 
             this.efetuarSaídaEntradaToolStripMenuItem.Name = "efetuarSaídaEntradaToolStripMenuItem";
             resources.ApplyResources(this.efetuarSaídaEntradaToolStripMenuItem, "efetuarSaídaEntradaToolStripMenuItem");
+            this.efetuarSaídaEntradaToolStripMenuItem.Click += new System.EventHandler(this.efetuarSaídaEntradaToolStripMenuItem_Click);
             // 
-            // sistemaToolStripMenuItem
+            // mscmd_sistema
             // 
-            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mscmd_sistema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarUsuárioToolStripMenuItem,
             this.consultarLogDeAcessoToolStripMenuItem});
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            resources.ApplyResources(this.sistemaToolStripMenuItem, "sistemaToolStripMenuItem");
+            resources.ApplyResources(this.mscmd_sistema, "mscmd_sistema");
+            this.mscmd_sistema.Name = "mscmd_sistema";
             // 
             // administrarUsuárioToolStripMenuItem
             // 
+            this.administrarUsuárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarUsuárioToolStripMenuItem,
+            this.desbloquearContaToolStripMenuItem,
+            this.alterarSenhaToolStripMenuItem});
             this.administrarUsuárioToolStripMenuItem.Name = "administrarUsuárioToolStripMenuItem";
             resources.ApplyResources(this.administrarUsuárioToolStripMenuItem, "administrarUsuárioToolStripMenuItem");
+            // 
+            // cadastrarUsuárioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.cadastrarUsuárioToolStripMenuItem, "cadastrarUsuárioToolStripMenuItem");
+            this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
+            this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
             // consultarLogDeAcessoToolStripMenuItem
             // 
@@ -219,6 +234,16 @@
             // 
             this.lbl_usuario.Name = "lbl_usuario";
             resources.ApplyResources(this.lbl_usuario, "lbl_usuario");
+            // 
+            // desbloquearContaToolStripMenuItem
+            // 
+            resources.ApplyResources(this.desbloquearContaToolStripMenuItem, "desbloquearContaToolStripMenuItem");
+            this.desbloquearContaToolStripMenuItem.Name = "desbloquearContaToolStripMenuItem";
+            // 
+            // alterarSenhaToolStripMenuItem
+            // 
+            this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
+            resources.ApplyResources(this.alterarSenhaToolStripMenuItem, "alterarSenhaToolStripMenuItem");
             // 
             // frm_principal
             // 
@@ -247,12 +272,12 @@
         private System.Windows.Forms.ToolStripMenuItem mscmd_sair;
         private System.Windows.Forms.StatusStrip status_strip;
         private System.Windows.Forms.ToolStripStatusLabel lbl_usuario;
-        private System.Windows.Forms.ToolStripMenuItem lançamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_contas;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_estoque;
         private System.Windows.Forms.ToolStripMenuItem verLançamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mscmd_config;
         private System.Windows.Forms.ToolStripMenuItem novoLançamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem relátoriosELivrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_relatorios;
         private System.Windows.Forms.ToolStripMenuItem livrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem balançoToolStripMenuItem;
@@ -264,8 +289,11 @@
         private System.Windows.Forms.ToolStripMenuItem consultarEstoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem efetuarSaídaEntradaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verContasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mscmd_sistema;
         private System.Windows.Forms.ToolStripMenuItem administrarUsuárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarLogDeAcessoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desbloquearContaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarSenhaToolStripMenuItem;
     }
 }
