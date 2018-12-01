@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_novo_lancamento));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dtp_data = new System.Windows.Forms.DateTimePicker();
@@ -288,8 +289,9 @@
             this.Controls.Add(this.dtp_data);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_novo_lancamento";
-            this.Text = "frm_novo_lancamento";
+            this.Text = "Novo Lançamento";
             this.Load += new System.EventHandler(this.frm_novo_lancamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_movimentos)).EndInit();
             this.groupBox1.ResumeLayout(false);
