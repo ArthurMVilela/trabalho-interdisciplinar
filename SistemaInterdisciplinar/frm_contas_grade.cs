@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace SistemaInterdisciplinar
 {
     public partial class frm_contas_grade : Form
     {
+        CtrlConexao conexao = new CtrlConexao();
+        OleDbDataReader dr;
+
         public frm_contas_grade()
         {
             InitializeComponent();
@@ -19,10 +23,14 @@ namespace SistemaInterdisciplinar
 
         private void frm_contas_grade_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'dbDataSet1.contas'. Você pode movê-la ou removê-la conforme necessário.
-            this.contasTableAdapter1.Fill(this.dbDataSet1.contas);
-            // TODO: esta linha de código carrega dados na tabela 'dbDataSet.contas'. Você pode movê-la ou removê-la conforme necessário.
-            this.contasTableAdapter.Fill(this.dbDataSet.contas);
+            conexao.iniciarConexao();
+
+            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM contas", conexao.conexao);
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            dgv_contas.DataSource = ds.Tables[0];
 
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_cadastro));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
@@ -256,6 +257,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_cadastro";
             this.Text = "Cadastro de Usuário";
             this.Load += new System.EventHandler(this.frm_cadastro_Load);

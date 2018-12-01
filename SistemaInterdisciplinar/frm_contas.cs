@@ -15,6 +15,7 @@ namespace SistemaInterdisciplinar
     {
         OleDbDataReader dr;
         CtrlContas ctrl;
+        CtrlConexao conexao = new CtrlConexao();
         string cod;
         int n1 = 0, n2 = 0, n3 = 0, n4 = 0, n5 = 0;
 
@@ -29,14 +30,37 @@ namespace SistemaInterdisciplinar
             grade.ShowDialog();
         }
 
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            cod = mtxt_cod.Text;
+
+            dr = ctrl.getConta(cod);
+
+            int id;
+
+            if (!dr.HasRows)
+            {
+                MessageBox.Show("Essa conta não existe!", "ERRO");
+                return;
+            } else
+            {
+                id = dr.GetInt32(0);
+            }
+
+            string query = "DELETE FROM contas WHERE id=" + id.ToString();
+
+            conexao.executarComando(query);
+        }
+
         private void frm_contas_Load(object sender, EventArgs e)
         {
             ctrl = new CtrlContas();
+            conexao.iniciarConexao();
             //carregar contas
             atualizarTreeview();
 
             mtxt_cod.Mask = Configuracoes.mascaraInterna;
-            mtxt_cod_parent.Mask = Configuracoes.mascaraInterna;
+            //mtxt_cod_parent.Mask = Configuracoes.mascaraInterna;
         }
 
         private void trv_contas_Click(object sender, EventArgs e)
@@ -51,6 +75,7 @@ namespace SistemaInterdisciplinar
                     dr.Read();
                     mtxt_cod.Text = cod;
                     txt_desc.Text = dr.GetString(7);
+                    cmb_tipo.Text = dr.GetString(6);
                 }
 
                 dr.Close();
@@ -107,11 +132,11 @@ namespace SistemaInterdisciplinar
                     n5 = dr.IsDBNull(5) ? 0 : (int)dr.GetInt16(5);
                     
 
-                    mtxt_cod_parent.Text = ctrl.gerarClassificacao(n1, n2, n3, n4, n5);
+                    //mtxt_cod_parent.Text = ctrl.gerarClassificacao(n1, n2, n3, n4, n5);
                 }
                 else
                 {
-                    mtxt_cod_parent.Text = "";
+                    //mtxt_cod_parent.Text = "";
                 }
 
                 dr.Close();
@@ -142,11 +167,18 @@ namespace SistemaInterdisciplinar
 
                     cod = ctrl.gerarClassificacao(n1, n2, n3, n4, n5);
                     conta = "";
-                    conta = string.Format("{0} {1} : {2:c}", cod, dr.GetString(7), dr.GetDouble(8));
+
+                    if (dr.GetDouble(8) == 0)
+                    {
+                        conta = string.Format("{0} {1}", cod, dr.GetString(7));
+                    } else
+                    {
+                        conta = string.Format("{0} {1} : {2:c}", cod, dr.GetString(7), dr.GetDouble(8));
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
-
                     conta = string.Format("{0} : {1:c}", dr.GetString(7), dr.GetDouble(8));
                 }
 

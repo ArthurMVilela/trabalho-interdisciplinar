@@ -88,8 +88,8 @@ namespace SistemaInterdisciplinar
                 
             } else if (cmb_mov.Text == "Saída")
             {
-                try
-                {
+                //try
+                //{
                     ctrl.saida(Convert.ToInt32(txt_cod.Text), Convert.ToDouble(txt_qtde.Text));
 
                     MessageBox.Show("Saída registrada com sucesso.", "SUCESSO");
@@ -109,10 +109,11 @@ namespace SistemaInterdisciplinar
                         txt_preco.Text = dr.GetDouble(3).ToString();
                         txt_qtde_estoque.Text = dr.GetDouble(2).ToString();
                     }
-                } catch(Exception ex)
-                {
-                    MessageBox.Show("Erro ao registrar movimento.");
-                }
+                //} catch(Exception ex)
+                //{
+                //    MessageBox.Show("Erro ao registrar movimento.");
+                //    MessageBox.Show(ex.Message);
+                //}
             }
         }
 

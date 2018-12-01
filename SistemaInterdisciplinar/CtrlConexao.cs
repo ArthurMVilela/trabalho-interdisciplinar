@@ -12,7 +12,7 @@ namespace SistemaInterdisciplinar
     {
         // String de connexão
         private string sConexao = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\db\db.accdb";
-        private OleDbConnection conexao;
+        public OleDbConnection conexao;
 
         public void iniciarConexao()
         {

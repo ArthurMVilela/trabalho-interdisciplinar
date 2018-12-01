@@ -50,8 +50,8 @@ namespace SistemaInterdisciplinar
                     mscmd_contas.Visible = true;
                     mscmd_contas.Enabled = true;
 
-                    mscmd_relatorios.Visible = true;
-                    mscmd_relatorios.Enabled = true;
+                    //mscmd_relatorios.Visible = true;
+                    //mscmd_relatorios.Enabled = true;
 
                     break;
                 case "GEREN":
@@ -111,12 +111,27 @@ namespace SistemaInterdisciplinar
 
         private void consultarEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            new frm_estoque().Show();
         }
 
         private void efetuarSaídaEntradaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new frm_es_estoque().Show();
+        }
+
+        private void verLançamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frm_lancamentos().Show();
+        }
+
+        private void cadastrarProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frm_produto().Show();
+        }
+
+        private void alterarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frm_senha().Show();
         }
     }
 }

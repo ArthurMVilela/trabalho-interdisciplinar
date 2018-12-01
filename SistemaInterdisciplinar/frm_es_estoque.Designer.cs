@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_es_estoque));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_cod = new System.Windows.Forms.TextBox();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.txt_qtde_estoque = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_desc = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txt_preco = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_desc = new System.Windows.Forms.TextBox();
+            this.txt_qtde_estoque = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.txt_cod = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmb_mov = new System.Windows.Forms.ComboBox();
             this.txt_custo = new System.Windows.Forms.TextBox();
@@ -67,48 +68,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Produto";
             // 
-            // label1
+            // txt_desc
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cod:";
+            this.txt_desc.Enabled = false;
+            this.txt_desc.Location = new System.Drawing.Point(96, 59);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(676, 26);
+            this.txt_desc.TabIndex = 15;
             // 
-            // txt_cod
+            // label4
             // 
-            this.txt_cod.Location = new System.Drawing.Point(54, 26);
-            this.txt_cod.Name = "txt_cod";
-            this.txt_cod.Size = new System.Drawing.Size(94, 26);
-            this.txt_cod.TabIndex = 1;
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Location = new System.Drawing.Point(154, 24);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(69, 29);
-            this.btn_buscar.TabIndex = 9;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
-            // 
-            // txt_qtde_estoque
-            // 
-            this.txt_qtde_estoque.Enabled = false;
-            this.txt_qtde_estoque.Location = new System.Drawing.Point(412, 26);
-            this.txt_qtde_estoque.Name = "txt_qtde_estoque";
-            this.txt_qtde_estoque.Size = new System.Drawing.Size(103, 26);
-            this.txt_qtde_estoque.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Quatidade em Estoque:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Descrição:";
             // 
             // txt_preco
             // 
@@ -127,22 +102,48 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Preço Unitário:";
             // 
-            // label4
+            // txt_qtde_estoque
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Descrição:";
+            this.txt_qtde_estoque.Enabled = false;
+            this.txt_qtde_estoque.Location = new System.Drawing.Point(412, 26);
+            this.txt_qtde_estoque.Name = "txt_qtde_estoque";
+            this.txt_qtde_estoque.Size = new System.Drawing.Size(103, 26);
+            this.txt_qtde_estoque.TabIndex = 11;
             // 
-            // txt_desc
+            // label2
             // 
-            this.txt_desc.Enabled = false;
-            this.txt_desc.Location = new System.Drawing.Point(96, 59);
-            this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(676, 26);
-            this.txt_desc.TabIndex = 15;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(229, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Quatidade em Estoque:";
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(154, 24);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(69, 29);
+            this.btn_buscar.TabIndex = 9;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // txt_cod
+            // 
+            this.txt_cod.Location = new System.Drawing.Point(54, 26);
+            this.txt_cod.Name = "txt_cod";
+            this.txt_cod.Size = new System.Drawing.Size(94, 26);
+            this.txt_cod.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cod:";
             // 
             // label5
             // 
@@ -227,6 +228,7 @@
             this.Controls.Add(this.cmb_mov);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_es_estoque";
             this.Text = "Entrada/Saída de Estoque";
             this.Load += new System.EventHandler(this.frm_es_estoque_Load);

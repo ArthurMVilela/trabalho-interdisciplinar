@@ -202,19 +202,20 @@ namespace SistemaInterdisciplinar
                 query = "UPDATE contas SET total =" + valor.ToString() + " WHERE id ="+ idConta.ToString() +"";
                 conexao.executarComando(query);
 
+                //Não precisa atualizar as "contas pai"
                 //atualizar "contas pai"
-                dr = ctrl.getContaParent(codConta);
+                //dr = ctrl.getContaParent(codConta);
 
 
-                while (dr.Read())
-                {
-                    idConta = (int)dr.GetInt32(0);
-                    valorParent = dr.GetDouble(8);
+                //while (dr.Read())
+                //{
+                //    idConta = (int)dr.GetInt32(0);
+                //    valorParent = dr.GetDouble(8);
 
-                    query = "UPDATE contas SET total =" + (valorParent + valorMudanca).ToString() + " WHERE id =" + idConta.ToString() + "";
+                //    query = "UPDATE contas SET total =" + (valorParent + valorMudanca).ToString() + " WHERE id =" + idConta.ToString() + "";
                     
-                    conexao.executarComando(query);
-                }
+                //    conexao.executarComando(query);
+                //}
             }
 
             

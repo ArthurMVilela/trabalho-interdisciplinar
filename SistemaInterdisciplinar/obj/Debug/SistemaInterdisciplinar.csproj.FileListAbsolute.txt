@@ -17,3 +17,8 @@ D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\bin\Debug\db.accdb
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_contas_grade.resources
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_logs.resources
 D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_es_estoque.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_lancamentos.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_estoque.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_produto.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_lancamento.resources
+D:\FATEC\trabalho-interdisciplinar\SistemaInterdisciplinar\obj\Debug\SistemaInterdisciplinar.frm_senha.resources

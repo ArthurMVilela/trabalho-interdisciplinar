@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_contas));
             this.trv_contas = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,8 +38,6 @@
             this.cmb_tipo = new System.Windows.Forms.ComboBox();
             this.btn_criar = new System.Windows.Forms.Button();
             this.btn_excluir = new System.Windows.Forms.Button();
-            this.mtxt_cod_parent = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btn_visualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -105,9 +104,8 @@
             this.cmb_tipo.Items.AddRange(new object[] {
             "Ativo",
             "Passivo",
-            "Patrimônio Liquido",
-            "Despesa",
-            "Custo",
+            "Patrimônio",
+            "Custp/Despesa",
             "Receita"});
             this.cmb_tipo.Location = new System.Drawing.Point(16, 178);
             this.cmb_tipo.Name = "cmb_tipo";
@@ -131,25 +129,7 @@
             this.btn_excluir.TabIndex = 8;
             this.btn_excluir.Text = "Excluir Conta";
             this.btn_excluir.UseVisualStyleBackColor = true;
-            // 
-            // mtxt_cod_parent
-            // 
-            this.mtxt_cod_parent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxt_cod_parent.Location = new System.Drawing.Point(142, 114);
-            this.mtxt_cod_parent.Mask = "9-9-99-99-99";
-            this.mtxt_cod_parent.Name = "mtxt_cod_parent";
-            this.mtxt_cod_parent.Size = new System.Drawing.Size(105, 26);
-            this.mtxt_cod_parent.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 117);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Conta de origem";
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // btn_visualizar
             // 
@@ -167,8 +147,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 551);
             this.Controls.Add(this.btn_visualizar);
-            this.Controls.Add(this.mtxt_cod_parent);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_criar);
             this.Controls.Add(this.cmb_tipo);
@@ -178,8 +156,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trv_contas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_contas";
-            this.Text = "frm_contas";
+            this.Text = "Contas";
             this.Load += new System.EventHandler(this.frm_contas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,8 +176,6 @@
         private System.Windows.Forms.ComboBox cmb_tipo;
         private System.Windows.Forms.Button btn_criar;
         private System.Windows.Forms.Button btn_excluir;
-        private System.Windows.Forms.MaskedTextBox mtxt_cod_parent;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_visualizar;
     }
 }

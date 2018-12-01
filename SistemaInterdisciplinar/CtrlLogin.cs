@@ -150,6 +150,13 @@ namespace SistemaInterdisciplinar
             }
 
         }
-            
+        
+        public void mudarSenha (int id, string novaSenha)
+        {
+            string salt = gerarSalt(20);
+            string query = "UPDATE usuarios SET salt ='" + salt + "', chave_seguranca = '" + gerarChave(novaSenha, salt) + "' WHERE id =" + id.ToString();
+
+            conexao.executarComando(query);
+        }
     }
 }
